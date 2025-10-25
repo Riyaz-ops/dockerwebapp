@@ -3,12 +3,12 @@ version: "3"
 services:
  devopsdb:
    container_name: devopsdb
-   image: riyaz19/myrepo:dbimage-v1
+   image: riyaz19/myrepo:dbimage-v2
    ports:
      - "3306:3306"
 
  application:
-   image: riyaz19/myrepo:appimage-v1
+   image: riyaz19/myrepo:appimage-v2
    container_name: appcontainer
    ports:
      - "1234:8080"
